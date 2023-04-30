@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import mediapipe as mp
 from collections import deque
-
+#git clone https://github.com/google/mediapipe.git
 
 # Giving different arrays to handle colour points of different colour
 bpoints = [deque(maxlen=1024)]
