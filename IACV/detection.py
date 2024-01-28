@@ -160,12 +160,8 @@ class CharacterDetector:
         history = self.model.fit(
             self.trainX,
             self.trainY,
-<<<<<<< HEAD:detection.py
-            epochs=5,
-=======
             epochs=20,
->>>>>>> def5ece025d202ec6a783d20874817d0ad2f8c1d:IACV/detection.py
-            callbacks=[self.reduce_lr, self.early_stop],
+            
             validation_data=(self.testX, self.testY),
         )
         print("trained")
