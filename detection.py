@@ -156,7 +156,7 @@ class CharacterDetector:
         history = self.model.fit(
             self.trainX,
             self.trainY,
-            epochs=1,
+            epochs=5,
             callbacks=[self.reduce_lr, self.early_stop],
             validation_data=(self.testX, self.testY),
         )
